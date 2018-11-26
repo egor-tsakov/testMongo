@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  if collection
+    ol
+      each listItem in collection
+         li= listItem.name
+  else
+     p The database is empty.
